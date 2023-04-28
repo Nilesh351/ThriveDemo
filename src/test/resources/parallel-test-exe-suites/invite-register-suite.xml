@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+  
+  <test name="User Invite" parallel="methods" thread-count="1"> 
+  <classes>
+	 	<class name="com.thrive.ui.test.user.invite_registration.InviteClientTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.InviteAccountManagerTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.InviteCoachTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.InviteEnterpriseTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.BulkInviteClientTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.BulkinviteCoachTest"/>
+	</classes>        
+  </test> 
+  
+  <test name="User Registration" parallel="methods" thread-count="1"> 
+	<classes>
+	 	<class name="com.thrive.ui.test.user.invite_registration.RegisterAccountManagerTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.RegisterClientTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.RegisterCoachTest"/>
+	 	<class name="com.thrive.ui.test.user.invite_registration.RegisterEnterpriseTest"/>
+	</classes>        
+  </test> 
+
+</suite> 

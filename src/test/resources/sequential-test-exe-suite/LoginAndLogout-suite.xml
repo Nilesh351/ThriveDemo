@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="Credit Management" parallel="methods" thread-count="1"> 
+    
+	<classes>
+	 	<class name="com.thrive.ui.test.core.LoginTest"/>
+	 	<class name="com.thrive.ui.test.core.LogoutTest"/>
+	</classes>        
+  </test> 
+ 
+</suite> 

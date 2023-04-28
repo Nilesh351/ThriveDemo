@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="profile update" parallel="methods" thread-count="1"> 
+    
+	<classes>
+	 	<class name="com.thrive.ui.test.ProfileDetailsUpdate.UpdateAccountManagerProfileTest"/>
+	 	<class name="com.thrive.ui.test.ProfileDetailsUpdate.UpdateClientProfileTest"/>
+	 	<class name="com.thrive.ui.test.ProfileDetailsUpdate.UpdateEnterpriseProfileTest"/>
+	 	<class name="com.thrive.ui.test.ProfileDetailsUpdate.UpdateCoachProfileTest"/>
+	 	<class name="com.thrive.ui.test.ProfileDetailsUpdate.UpdateInternalCoachProfileTest"/>
+	</classes>        
+  </test> 
+ 
+</suite> 

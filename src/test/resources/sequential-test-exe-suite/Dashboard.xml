@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="Dashboard" parallel="methods" thread-count="1"> 
+	<classes>
+	 	<class name="com.thrive.ui.test.dashboard.DashboardTest"/>
+	</classes>        
+  </test> 
+ 
+</suite> 

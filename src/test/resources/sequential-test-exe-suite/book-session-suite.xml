@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="Book Session" parallel="methods" thread-count="1"> 
+	<classes>
+	 	<class name="com.thrive.ui.test.book_session.ArrangeSessionTest"/>
+	 	<class name="com.thrive.ui.test.book_session.BookSessionFiltersTest"/>
+	 	<class name="com.thrive.ui.test.book_session.BookSessionTest"/>
+	 	<class name="com.thrive.ui.test.book_session.ValidatingMultipleSession"/>
+	 	<class name="com.thrive.ui.test.book_session.ValidatingSessionTipsLinks"/>
+	</classes>        
+  </test> 
+ 
+</suite> 

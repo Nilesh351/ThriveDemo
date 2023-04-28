@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="usermanagement searchandfilter" parallel="methods" thread-count="1"> 
+    
+	<classes>
+	   	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementUsersTest"/>
+	   	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInvitedUsersTest"/>
+	   	
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementCoachesSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInvitedCoachSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementArchivedCoachesSearchFilterTest"/>
+	 	
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementEnterpriseSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInvitedEnterpriseSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementArchivedEnterprisesSearchFilterTest"/>
+	 	
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInternalCoachesSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInvitedInternalCoachSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementArchivedInternalCoachesSearchFilterTest"/>
+	 	
+	 	
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementClientSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInvitedClientSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementArchivedClientsSearchFilterTest"/>
+	 	
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementAccountManagerSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementInvitedAccountManagerSearchFilterTest"/>
+	 	<class name="com.thrive.ui.test.user_management_search_filter.UserManagementArchivedAccountManagerSearchFilterTest"/>
+	</classes>        
+  </test> 
+ 
+</suite> 

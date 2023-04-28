@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive Stage Regression" parallel="tests" thread-count="3" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="Thrive Login And Invite Tests"> 
+  	<parameter name="browser"  value="firefox"/> 
+		<classes>
+		 	<class name="com.thrive.ui.test.core.LoginTest"/>
+		 	<class name="com.thrive.ui.test.user.invite_registration.InviteClientTest"/>
+		 	<class name="com.thrive.ui.test.user.invite_registration.InviteAccountManagerTest"/>
+		 	<class name="com.thrive.ui.test.user.invite_registration.InviteCoachTest"/>
+		 	<class name="com.thrive.ui.test.user.invite_registration.InviteEnterpriseTest"/>
+		</classes>        
+  </test>
+
+	<test name="Thrive Register Tests">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.thrive.ui.test.user.invite_registration.RegisterAccountManagerTest" />
+			<class name="com.thrive.ui.test.user.invite_registration.RegisterClientTest" />
+			<class name="com.thrive.ui.test.user.invite_registration.RegisterCoachTest" />
+			<class name="com.thrive.ui.test.user.invite_registration.RegisterEnterpriseTest" />
+		</classes>
+	</test> 
+  
+  <test name="Thrive Credit And Book Session Tests"> 
+  	<parameter name="browser" value="chrome" />
+		<classes>	 	
+		 	<class name="com.thrive.ui.test.credits.CreditsManagementTest"/>
+		 	<class name="com.thrive.ui.test.category_management.CategoryAndExpertiseManagementTest"/>
+		 	<class name="com.thrive.ui.test.book_session.BookSessionTest"/>
+		 	<class name="com.thrive.ui.test.credit_consumption.CreditConsumptionTest"/>
+		</classes>        
+  </test> 
+</suite> 
+
+

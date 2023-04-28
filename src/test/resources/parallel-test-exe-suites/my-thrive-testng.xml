@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="User Authentication" parallel="methods" thread-count="1"> 
+    
+	<classes>
+	 	<!-- <class name="test_runner.TestRunner"/> -->
+	 		<class name="com.thrive.ui.test.category_management.CategoryOpearationsTest"/>
+	</classes>        
+  </test> 
+ 
+</suite> 
+
+
+<!--    <test name="User Registraation" parallel="methods" thread-count="1"> 
+	<packages>
+	 	<class name="test_runner.TestRunner"/>
+	 	<package name="com.thrive.ui.test.user.invite_registration"/>
+	</packages>        
+  </test>  -->

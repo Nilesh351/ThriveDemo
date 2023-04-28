@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<suite name="MyThrive" parallel="none" verbose="1">
+	<listeners>
+		<listener class-name="com.thrive.ui.core.AnnotationTransformer" />
+	</listeners>
+ 
+  <test name="User management" parallel="methods" thread-count="1"> 
+    
+	<classes>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementAccountManagerRegisterErrorValidationTest"/> 
+	 	<class name="com.thrive.ui.test.user_management.UserManagementAccountManagersTest"/>
+		<class name="com.thrive.ui.test.user_management.UserManagementClientRegisterErrorValidationTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementClientsTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementCoachesTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementCoachRegisterErrorValidationTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementEmployeesTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementEnterpriseRegisterErrorValidationTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementEnterprisesTest"/>
+	 	<class name="com.thrive.ui.test.user_management.UserManagementInternalCoachesTest"/>	
+	</classes>        
+  </test> 
+ 
+</suite> 
